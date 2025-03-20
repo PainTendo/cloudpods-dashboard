@@ -65,7 +65,8 @@ const getBuildInfo = () => {
 const devServerCoustomConfig = fsExistsSync(resolve('./dev.server.config.js')) ? require('./dev.server.config.js') : {}
 
 module.exports = {
-  lintOnSave: process.env.NODE_ENV !== 'production',
+  // lintOnSave: process.env.NODE_ENV !== 'production',
+  lintOnSave: false,
   configureWebpack: (config) => {
     config.plugins.push(createThemeColorReplacerPlugin())
     config.plugins.push(new webpack.DefinePlugin({
@@ -178,7 +179,7 @@ module.exports = {
     port: 8080,
     proxy: {
       '/api': {
-        target: 'https://127.0.0.1:3000',
+        target: 'https://10.236.46.176',
         ws: true,
         changeOrigin: true,
         proxyTimeout: PROXY_TIMEOUT,

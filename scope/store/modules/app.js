@@ -6,7 +6,7 @@ const loginLogo = require('@scope/images/cloudpod_login_logo.png')
 export default {
   state: {
     companyInfo: {
-      copyright: 'Made with ❤ Cloudpods',
+      copyright: '联通云',
       logo,
       loginLogo,
       name: 'OneCloud',

@@ -15,6 +15,7 @@
     <div class="flex-fill d-flex align-items-center h-100">
       <div class="header-logo ml-2">
         <img class="logo" :src="logo" />
+        <!-- <b style="font-size:20px;margin-left:8px">联通云</b> -->
       </div>
       <h1 class="header-title ml-3">{{ $t('common_210') }}</h1>
       <!-- 视图选择 -->

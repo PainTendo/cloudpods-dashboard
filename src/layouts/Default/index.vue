@@ -9,7 +9,7 @@
           id="app-page"
           class="app-page"
           :class="{ 'l2-menu-show': l2MenuVisible && l2MenuVisibleForStore }">
-          <top-alert />
+          <!-- <top-alert /> -->
           <slot />
         </div>
       </div>
@@ -25,7 +25,7 @@
 <script>
 import { mapGetters } from 'vuex'
 import Navbar from '@scope/layouts/Navbar'
-import TopAlert from '@/sections/TopAlert'
+// import TopAlert from '@/sections/TopAlert'
 import { menusConfig } from '@/router/routes'
 import L2Menu from '../Sidebar/Menu'
 import SidebarDrawer from '../Sidebar/Drawer'
@@ -35,7 +35,7 @@ export default {
   components: {
     SidebarDrawer,
     Navbar,
-    TopAlert,
+    // TopAlert,
     'l2-menu': L2Menu,
   },
   data () {
