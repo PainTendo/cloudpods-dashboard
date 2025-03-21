@@ -170,7 +170,8 @@ export default {
 .l2-menus-popover {
   padding: 0;
   .ant-popover-inner {
-    background-color: @sidebar-dark-bg-color;
+    // background-color: @sidebar-dark-bg-color;
+    background-color: @sidebar-light-bg-color;
   }
   .ant-popover-arrow {
     display: none;
@@ -186,10 +187,12 @@ export default {
   &.light-theme {
     .ant-popover-inner {
       background-color: @sidebar-light-bg-color;
+      // background-color: @sidebar-dark-bg-color;
     }
     .l2-menu-list {
       .l2-menu-group-title {
-        color: #000000;
+        // color: #000000;
+        color: @sidebar-light-text-color;
         font-weight: 500;
       }
       .l2-menu-item {
@@ -219,13 +222,39 @@ export default {
     border-bottom:none
   }
   .l2-menu-group-title {
-    font-size: 14px;
-    color: rgba(255, 255, 255, .7);
-    line-height: 24px;
-    margin-bottom: 6px;
-    margin-top: 6px;
-    padding: 0 2px;
+    // font-size: 14px;
+    // color: @sidebar-light-text-color;
+    // line-height: 24px;
+    // margin-bottom: 6px;
+    // margin-top: 6px;
+    // padding: 0 2px;
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 13px;
+    // font-weight: 500;
+    color: #aaaaaa;
+
+    // .group-title {
+    //   font-size: 12px;
+    //   font-weight: 500;
+    //   color: #dddddd;
+    //   padding: 0 12px;
+    //   white-space: nowrap;
+    // }
+
+    // .divider-line {
+    //   flex: 1;
+    //   height: 1px;
+    //   background-color: #dddddd;
+    //   margin-left: 8px;
+    // }
   }
+  //去掉分割线
+  // .l2-menu-group {
+  //     padding-bottom: 0;
+  //     border-bottom: none;
+  //   }
   .l2-menu-item {
     display: block;
     padding-bottom: 4px;
@@ -233,7 +262,8 @@ export default {
     padding-left: 18px;
     padding-right: 16px;
     font-size: 14px;
-    color: @sidebar-dark-text-color;
+    // color: @sidebar-dark-text-color;
+    color: @sidebar-light-text-color;
     &:hover {
       background-color: @primary-color;
       color: @sidebar-dark-hover-text-color;

@@ -107,7 +107,8 @@ export default {
 
 .products-list-wrap {
   height: 100%;
-  background-color: @sidebar-dark-bg-color;
+  // background-color: @sidebar-dark-bg-color;
+  background-color: @sidebar-light-bg-color;
   .scrollbar-wrap {
     overflow-x: hidden;
   }
@@ -144,7 +145,8 @@ export default {
 .l1-menu-item {
   > a {
     height: 44px;
-    color: @sidebar-dark-text-color;
+    // color: @sidebar-dark-text-color;
+    color: @sidebar-light-text-color;
   }
   .l1-menu-item-icon {
     width: 64px;
@@ -170,13 +172,15 @@ export default {
   &:hover {
     background-color: @primary-color;
     > a {
-      color: @sidebar-dark-hover-text-color!important;
+      // color: @sidebar-dark-hover-text-color!important;
+      color: @sidebar-light-hover-text-color !important;
     }
   }
   &.ant-popover-open {
     background-color: @primary-color;
     > a {
       color: @sidebar-dark-hover-text-color!important;
+      // color: @sidebar-light-hover-text-color !important;
     }
   }
   .l1-menu-item-right-icon {

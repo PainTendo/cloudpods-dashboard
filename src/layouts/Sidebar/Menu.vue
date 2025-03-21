@@ -34,13 +34,13 @@
         </router-link>
       </div>
     </scrollbar>
-    <div class="level-2-menu-collapse" @click="$store.commit('setting/SET_L2_MENU_VISIBLE', !l2MenuVisibleForStore)">
+    <!-- <div class="level-2-menu-collapse" @click="$store.commit('setting/SET_L2_MENU_VISIBLE', !l2MenuVisibleForStore)">
       <div class="level-2-menu-collapse-bg" />
       <div class="level-2-menu-collapse-icon d-flex align-items-center">
         <a-icon type="left" style="font-size: 12px;" v-show="l2MenuVisibleForStore" />
         <a-icon type="right" style="font-size: 12px;" v-show="!l2MenuVisibleForStore" />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -131,7 +131,7 @@ export default {
 .level-2-wrap {
   position: fixed;
   left: 0;
-  width: 160px;
+  width: 200px;
   top: 60px;
   bottom: 0;
   background-color: @sidebar-dark-bg-color;
@@ -220,7 +220,8 @@ export default {
     padding-top: 6px;
     padding-left: 20px;
     font-size: 14px;
-    color: @sidebar-dark-text-color;
+    // color: @sidebar-dark-text-color;
+    color: @sidebar-light-text-color;
     position: relative;
     cursor: pointer;
 

@@ -91,12 +91,14 @@ export default {
 <style lang="less" scoped>
 .app-content {
   padding-top: 60px;
+  background-color: #fcfcfc;
 }
 .app-page {
   margin-bottom: 74px;
   padding: 15px;
-  &.l2-menu-show {
-    margin-left: 160px !important;
-  }
+  margin-left: 210px !important;
+  // &.l2-menu-show {
+  //   margin-left: 200px !important;
+  // }
 }
 </style>
