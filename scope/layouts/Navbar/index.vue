@@ -120,11 +120,11 @@
     <!-- 消息中心 -->
     <notify-popover class="navbar-item-icon primary-color-hover" :notifyMenuTitleUsedText="notifyMenuTitleUsedText" v-if="showNotify" />
     <!-- cloudshell -->
-    <cloud-shell v-if="isAdminMode" class="navbar-item-icon primary-color-hover" />
+    <!-- <cloud-shell v-if="isAdminMode" class="navbar-item-icon primary-color-hover" /> -->
     <!-- 更多 -->
-    <slot name="morePopover">
+    <!-- <slot name="morePopover">
       <more-popover class="navbar-item-icon primary-color-hover" />
-    </slot>
+    </slot> -->
     <div class="navbar-item">
       <a-dropdown :trigger="['click']">
         <!-- <div class="navbar-item-trigger d-flex align-items-center justify-content-center">
@@ -135,7 +135,7 @@
           <span class="ml-2 text-truncate" style="max-width: 100px;">{{ username }}</span>
         </div>
         <a-menu slot="overlay" @click="userMenuClick">
-          <a-sub-menu key="language">
+          <!-- <a-sub-menu key="language">
             <span slot="title"><a-icon class="mr-2 ml-2" type="global" /><span>{{$t('common_630')}}</span></span>
             <a-menu-item key="3" @click="settingLanguageCH">
               <span class="mr-2" style="cursor: pointer">简体中文</span><a-icon v-show="language === 'zh-CN'" type="check-circle" theme="twoTone" twoToneColor="#52c41a" />
@@ -146,7 +146,7 @@
             <a-menu-item key="5" @click="settingLanguageJP">
               <span class="mr-2" style="cursor: pointer">日本語</span><a-icon v-show="language === 'ja-JP'" type="check-circle" theme="twoTone" twoToneColor="#52c41a" />
             </a-menu-item>
-          </a-sub-menu>
+          </a-sub-menu> -->
           <a-menu-item key="toClouduser" v-if="showClouduser"><a-icon class="mr-2 ml-2" type="cloud-upload" />{{ $t('scope.cloudid') }}</a-menu-item>
           <a-menu-item key="handleUpdatePassword"><a-icon class="mr-2 ml-2" type="usergroup-delete" />{{ $t('scope.text_5') }}</a-menu-item>
           <a-menu-item key="logout"><a-icon class="mr-2 ml-2" type="logout" />{{ $t('scope.text_6') }}</a-menu-item>
