@@ -172,8 +172,8 @@ export default {
   &:hover {
     background-color: @primary-color;
     > a {
-      // color: @sidebar-dark-hover-text-color!important;
-      color: @sidebar-light-hover-text-color !important;
+      color: @sidebar-dark-hover-text-color!important;
+      // color: @sidebar-light-hover-text-color !important;
     }
   }
   &.ant-popover-open {

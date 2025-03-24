@@ -131,7 +131,8 @@ export default {
 .level-2-wrap {
   position: fixed;
   left: 0;
-  width: 200px;
+  // width: 200px;
+  width: 0px;
   top: 60px;
   bottom: 0;
   background-color: @sidebar-dark-bg-color;

@@ -6,7 +6,7 @@
         <div class="auth-header d-flex align-items-center">
           <div class="auth-header-left flex-shrink-0 flex-grow-0">
             <img class="auth-header-logo" :src="loginLogo" />
-            <b style="font-size:20px;margin-left:8px">联通云｜多云管理</b>
+            <b style="font-size:20px;margin-left:8px">联通云｜多云管理平台</b>
           </div>
           <!-- 多语言切换按钮 -->
           <!-- <div class="auth-header-right flex-fill d-flex justify-content-end">

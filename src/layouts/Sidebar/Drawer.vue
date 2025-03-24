@@ -11,16 +11,9 @@
     <products-list @route-change="handleClose" :active-menu="activeMenu" :popover-align="{ offset: [5, 5] }" />
   </a-drawer> -->
   <div>
-    <div id="sidebar-wrap" class="fixed-sidebar" :class="{ 'light-theme': light, 'w-0': !l2MenuVisibleForStore }">
+    <div id="sidebar-wrap" class="fixed-sidebar" :class="{ 'w-0': !l2MenuVisibleForStore }">
       <products-list :active-menu="activeMenu" :popover-align="{ offset: [5, 5] }" />
     </div>
-    <!-- <div class="level-2-menu-collapse" @click="$store.commit('setting/SET_L2_MENU_VISIBLE', !l2MenuVisibleForStore)">
-      <div class="level-2-menu-collapse-bg" />
-      <div class="level-2-menu-collapse-icon d-flex align-items-center">
-        <a-icon type="left" style="font-size: 12px;" v-show="l2MenuVisibleForStore" />
-        <a-icon type="right" style="font-size: 12px;" v-show="!l2MenuVisibleForStore" />
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -37,11 +30,11 @@ export default {
   props: {
     activeMenu: Object,
   },
-  computed: {
-    l2MenuVisibleForStore () {
-      return this.$store.state.setting.l2MenuVisible
-    },
-  },
+  // computed: {
+  //   l2MenuVisibleForStore () {
+  //     return this.$store.state.setting.l2MenuVisible
+  //   },
+  // },
   // data () {
   //   return {
   //     width: 200,
