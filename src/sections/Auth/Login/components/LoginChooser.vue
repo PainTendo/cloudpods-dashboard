@@ -38,6 +38,7 @@
 import * as R from 'ramda'
 import { mapState } from 'vuex'
 import { setSsoIdpIdInCookie } from '@/utils/auth'
+
 export default {
   name: 'LoginChooser',
   props: {
