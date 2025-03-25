@@ -175,19 +175,19 @@ import * as R from 'ramda'
 import { mapGetters, mapState } from 'vuex'
 import Alertresource from '@/sections/Navbar/components/Alertresource'
 import { setLanguage } from '@/utils/common/cookie'
-import CloudShell from '@/sections/Navbar/components/CloudShell'
+// import CloudShell from '@/sections/Navbar/components/CloudShell'
 import NotifyPopover from '@/sections/Navbar/components/NotifyPopover'
-import MorePopover from '@/sections/Navbar/components/MorePopover'
+// import MorePopover from '@/sections/Navbar/components/MorePopover'
 import WindowsMixin from '@/mixins/windows'
 import { hasSetupKey } from '@/utils/auth'
 
 export default {
   name: 'Navbar',
   components: {
-    CloudShell,
+    // CloudShell,
     Alertresource,
     NotifyPopover,
-    MorePopover,
+    // MorePopover,
   },
   mixins: [WindowsMixin],
   props: {
