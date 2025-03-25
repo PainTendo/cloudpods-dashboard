@@ -11,30 +11,30 @@ import { isScopedPolicyMenuHidden } from '@/utils/scopedPolicy'
 
 const AgentList = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/agent')
 const AgentForm = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/agent/form')
-const Cloudregion = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Cloudenv/views/cloudregion')
-const Zone = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Cloudenv/views/zone')
-const CdnList = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/cdn')
-const CdnCreate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/cdn/create')
-const VpcPeerConnectCreate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/vpc-peer-connect/create')
+// const Cloudregion = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Cloudenv/views/cloudregion')
+// const Zone = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Cloudenv/views/zone')
+// const CdnList = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/cdn')
+// const CdnCreate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/cdn/create')
+// const VpcPeerConnectCreate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/vpc-peer-connect/create')
 const Ipv6Gateway = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/ipv6-gateway')
 const DnsZone = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/dns-zone')
 const DnsZoneCreate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/dns-zone/create')
 const EipCreate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/eip/create')
-const Wire = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/wire')
+// const Wire = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/wire')
 const Network = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/network')
 const NetworkCreate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/network/Create')
 const EditAttributes = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/network/EditAttributes')
 const BatchEditAttributes = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/network/BatchEditAttributes')
 const Eip = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/eip')
-const Waf = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/waf')
-const GlobalVpc = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/global-vpc')
-const GlobalVpcCreate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/global-vpc/create')
+// const Waf = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/waf')
+// const GlobalVpc = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/global-vpc')
+// const GlobalVpcCreate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/global-vpc/create')
 const RouteTableList = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/route-table')
 const NatList = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/nats')
 const NatCreate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/nats/create/index')
 const VPC = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/vpc')
-const VpcNetwork = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/vpc-network')
-const VpcPeerConnect = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/vpc-peer-connect')
+// const VpcNetwork = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/vpc-network')
+// const VpcPeerConnect = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/vpc-peer-connect')
 const VPCCreate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/vpc/create')
 const LbList = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/lb')
 const LBCreate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/lb/create/index')
@@ -43,10 +43,10 @@ const LbaclsList = () => import(/* webpackChunkName: "network" */ /* webpackPref
 const LbcertsList = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/lbcerts')
 const LoadbalancerclusterList = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/loadbalancercluster')
 const LBClusterUpdate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/loadbalancercluster/update')
-const SshProxyList = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/ssh-proxy')
-const SshProxyCreate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/ssh-proxy/form')
-const SshAgentList = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/ssh-agent')
-const WebApp = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/webapp')
+// const SshProxyList = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/ssh-proxy')
+// const SshProxyCreate = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/ssh-proxy/form')
+// const SshAgentList = () => import(/* webpackChunkName: "network" */ /* webpackPrefetch: true */ '@Network/views/ssh-agent')
+// const WebApp = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/webapp')
 
 export default {
   index: 40,
@@ -55,55 +55,55 @@ export default {
     icon: 'menu-network',
   },
   menus: [
-    {
-      meta: {
-        label: i18n.t('cloudenv.text_9'),
-      },
-      submenus: [
-        {
-          path: '/cloudregion',
-          meta: {
-            label: i18n.t('cloudenv.text_10'),
-            permission: 'areas_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.cloudregion')) {
-                return true
-              }
-              return !hasSetupKey(['onestack', 'private', 'vmware', 'baremetal'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'Cloudregion',
-              path: '',
-              component: Cloudregion,
-            },
-          ],
-        },
-        {
-          path: '/zone',
-          meta: {
-            label: i18n.t('cloudenv.text_11'),
-            permission: 'zones_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.zone')) {
-                return true
-              }
-              return !hasSetupKey(['onestack', 'private', 'vmware', 'baremetal'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'Zone',
-              path: '',
-              component: Zone,
-            },
-          ],
-        },
-      ],
-    },
+    // {
+    //   meta: {
+    //     label: i18n.t('cloudenv.text_9'),
+    //   },
+    //   submenus: [
+    //     {
+    //       path: '/cloudregion',
+    //       meta: {
+    //         label: i18n.t('cloudenv.text_10'),
+    //         permission: 'areas_list',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.cloudregion')) {
+    //             return true
+    //           }
+    //           return !hasSetupKey(['onestack', 'private', 'vmware', 'baremetal'])
+    //         },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'Cloudregion',
+    //           path: '',
+    //           component: Cloudregion,
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       path: '/zone',
+    //       meta: {
+    //         label: i18n.t('cloudenv.text_11'),
+    //         permission: 'zones_list',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.zone')) {
+    //             return true
+    //           }
+    //           return !hasSetupKey(['onestack', 'private', 'vmware', 'baremetal'])
+    //         },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'Zone',
+    //           path: '',
+    //           component: Zone,
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
     /**
      * 基础网络
      */
@@ -112,78 +112,78 @@ export default {
         label: i18n.t('network.text_711'),
       },
       submenus: [
-        {
-          path: '/vpc-network',
-          meta: {
-            permission: 'inter_vpc_networks_list',
-            label: i18n.t('dictionary.vpc_network'),
-            t: 'dictionary.vpc_network',
-            hidden: () => {
-              if (store.getters.isProjectMode || isScopedPolicyMenuHidden('sub_hidden_menus.vpc_network')) return true
-              return !hasSetupKey(['aliyun', 'qcloud'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'VpcNetwork',
-              path: '',
-              component: VpcNetwork,
-            },
-          ],
-        },
-        {
-          path: '/vpc-peerconnect',
-          meta: {
-            label: i18n.t('dictionary.vpc_peer_connect'),
-            permission: 'vpc_peering_connections_list',
-            t: 'dictionary.vpc_peer_connect',
-            hidden: () => {
-              if (store.getters.isProjectMode || isScopedPolicyMenuHidden('sub_hidden_menus.vpc_peerconnect')) return true
-              return !hasSetupKey(['qcloud', 'huawei', 'aws', 'hcs'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'VpcPeerConnect',
-              path: '',
-              component: VpcPeerConnect,
-            },
-            {
-              name: 'VpcPeerConnectCreate',
-              path: 'create',
-              component: VpcPeerConnectCreate,
-            },
-          ],
-        },
-        {
-          path: '/globalvpc',
-          meta: {
-            label: i18n.t('dictionary.globalvpc'),
-            permission: 'network_globalvpcs_list',
-            t: 'dictionary.globalvpc',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.globalvpc')) {
-                return true
-              }
-              return !hasSetupKey('google')
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'GlobalVPC',
-              path: '',
-              component: GlobalVpc,
-            },
-            {
-              name: 'GlobalVpcCreate',
-              path: 'create',
-              component: GlobalVpcCreate,
-            },
-          ],
-        },
+        // {
+        //   path: '/vpc-network',
+        //   meta: {
+        //     permission: 'inter_vpc_networks_list',
+        //     label: i18n.t('dictionary.vpc_network'),
+        //     t: 'dictionary.vpc_network',
+        //     hidden: () => {
+        //       if (store.getters.isProjectMode || isScopedPolicyMenuHidden('sub_hidden_menus.vpc_network')) return true
+        //       return !hasSetupKey(['aliyun', 'qcloud'])
+        //     },
+        //   },
+        //   component: Layout,
+        //   children: [
+        //     {
+        //       name: 'VpcNetwork',
+        //       path: '',
+        //       component: VpcNetwork,
+        //     },
+        //   ],
+        // },
+        // {
+        //   path: '/vpc-peerconnect',
+        //   meta: {
+        //     label: i18n.t('dictionary.vpc_peer_connect'),
+        //     permission: 'vpc_peering_connections_list',
+        //     t: 'dictionary.vpc_peer_connect',
+        //     hidden: () => {
+        //       if (store.getters.isProjectMode || isScopedPolicyMenuHidden('sub_hidden_menus.vpc_peerconnect')) return true
+        //       return !hasSetupKey(['qcloud', 'huawei', 'aws', 'hcs'])
+        //     },
+        //   },
+        //   component: Layout,
+        //   children: [
+        //     {
+        //       name: 'VpcPeerConnect',
+        //       path: '',
+        //       component: VpcPeerConnect,
+        //     },
+        //     {
+        //       name: 'VpcPeerConnectCreate',
+        //       path: 'create',
+        //       component: VpcPeerConnectCreate,
+        //     },
+        //   ],
+        // },
+        // {
+        //   path: '/globalvpc',
+        //   meta: {
+        //     label: i18n.t('dictionary.globalvpc'),
+        //     permission: 'network_globalvpcs_list',
+        //     t: 'dictionary.globalvpc',
+        //     hidden: () => {
+        //       if (isScopedPolicyMenuHidden('sub_hidden_menus.globalvpc')) {
+        //         return true
+        //       }
+        //       return !hasSetupKey('google')
+        //     },
+        //   },
+        //   component: Layout,
+        //   children: [
+        //     {
+        //       name: 'GlobalVPC',
+        //       path: '',
+        //       component: GlobalVpc,
+        //     },
+        //     {
+        //       name: 'GlobalVpcCreate',
+        //       path: 'create',
+        //       component: GlobalVpcCreate,
+        //     },
+        //   ],
+        // },
         {
           path: '/vpc',
           meta: {
@@ -233,29 +233,29 @@ export default {
             },
           ],
         },
-        {
-          path: '/wire',
-          meta: {
-            label: i18n.t('dictionary.wire'),
-            permission: 'wires_list',
-            t: 'dictionary.wire',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.wire')) {
-                return true
-              }
-              return !hasSetupKey(['onestack', 'vmware', 'zstack', 'dstack', 'nutanix', 'baremetal'])
-            },
-            // hidden: () => !hasServices(['esxiagent', 'hostagent', 'bmagent']) && !hasBrands('ZStack'),
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'WireList',
-              path: '',
-              component: Wire,
-            },
-          ],
-        },
+        // {
+        //   path: '/wire',
+        //   meta: {
+        //     label: i18n.t('dictionary.wire'),
+        //     permission: 'wires_list',
+        //     t: 'dictionary.wire',
+        //     hidden: () => {
+        //       if (isScopedPolicyMenuHidden('sub_hidden_menus.wire')) {
+        //         return true
+        //       }
+        //       return !hasSetupKey(['onestack', 'vmware', 'zstack', 'dstack', 'nutanix', 'baremetal'])
+        //     },
+        //     // hidden: () => !hasServices(['esxiagent', 'hostagent', 'bmagent']) && !hasBrands('ZStack'),
+        //   },
+        //   component: Layout,
+        //   children: [
+        //     {
+        //       name: 'WireList',
+        //       path: '',
+        //       component: Wire,
+        //     },
+        //   ],
+        // },
         // {
         //   path: '/flexnetwork',
         //   meta: {
@@ -456,113 +456,113 @@ export default {
     /**
      * 网络安全
      */
-    {
-      meta: {
-        label: i18n.t('network.text_756'),
-      },
-      submenus: [
-        {
-          path: '/waf',
-          meta: {
-            label: i18n.t('dictionary.waf_instance'),
-            permission: 'waf_instances_list',
-            t: 'dictionary.waf_instance',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.waf')) return true
-              if (!(store.getters.isDomainMode || store.getters.isAdminMode)) return true
-              return !hasSetupKey(['aws', 'azure', 'aliyun', 'qcloud'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'WafList',
-              path: '',
-              component: Waf,
-            },
-          ],
-        },
-        {
-          path: '/webapp',
-          meta: {
-            label: i18n.t('compute.webapp'),
-            permission: 'webapps_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.webapp')) {
-                return true
-              }
-              return !hasSetupKey(['azure'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'WebApp',
-              path: '',
-              component: WebApp,
-            },
-          ],
-        },
-      ],
-    },
+    // {
+    //   meta: {
+    //     label: i18n.t('network.text_756'),
+    //   },
+    //   submenus: [
+    //     {
+    //       path: '/waf',
+    //       meta: {
+    //         label: i18n.t('dictionary.waf_instance'),
+    //         permission: 'waf_instances_list',
+    //         t: 'dictionary.waf_instance',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.waf')) return true
+    //           if (!(store.getters.isDomainMode || store.getters.isAdminMode)) return true
+    //           return !hasSetupKey(['aws', 'azure', 'aliyun', 'qcloud'])
+    //         },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'WafList',
+    //           path: '',
+    //           component: Waf,
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       path: '/webapp',
+    //       meta: {
+    //         label: i18n.t('compute.webapp'),
+    //         permission: 'webapps_list',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.webapp')) {
+    //             return true
+    //           }
+    //           return !hasSetupKey(['azure'])
+    //         },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'WebApp',
+    //           path: '',
+    //           component: WebApp,
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
     /**
      * SSH代理
      */
-    {
-      meta: {
-        label: i18n.t('network.ssh-proxy.title'),
-        hidden: () => (store.getters.isProjectMode || !hasSetupKey(['private', 'vmware', 'public'])),
-      },
-      submenus: [
-        {
-          path: '/ssh-proxy',
-          meta: {
-            label: i18n.t('network.ssh-proxy.endpoints'),
-            permission: 'sshproxy_node_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.ssh_proxy')) {
-                return true
-              }
-              return !hasSetupKey(['private', 'vmware', 'public'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'SshProxyList',
-              path: '',
-              component: SshProxyList,
-            },
-            {
-              name: 'SshProxyCreate',
-              path: 'create',
-              component: SshProxyCreate,
-            },
-          ],
-        },
-        {
-          path: '/ssh-agent',
-          meta: {
-            label: i18n.t('network.ssh-proxy.proxyservice'),
-            permission: 'sshproxy_service_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.ssh_agent')) {
-                return true
-              }
-              return store.getters.isDomainMode || !hasSetupKey(['private', 'vmware', 'public'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'SshAgentList',
-              path: '',
-              component: SshAgentList,
-            },
-          ],
-        },
-      ],
-    },
+    // {
+    //   meta: {
+    //     label: i18n.t('network.ssh-proxy.title'),
+    //     hidden: () => (store.getters.isProjectMode || !hasSetupKey(['private', 'vmware', 'public'])),
+    //   },
+    //   submenus: [
+    //     {
+    //       path: '/ssh-proxy',
+    //       meta: {
+    //         label: i18n.t('network.ssh-proxy.endpoints'),
+    //         permission: 'sshproxy_node_list',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.ssh_proxy')) {
+    //             return true
+    //           }
+    //           return !hasSetupKey(['private', 'vmware', 'public'])
+    //         },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'SshProxyList',
+    //           path: '',
+    //           component: SshProxyList,
+    //         },
+    //         {
+    //           name: 'SshProxyCreate',
+    //           path: 'create',
+    //           component: SshProxyCreate,
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       path: '/ssh-agent',
+    //       meta: {
+    //         label: i18n.t('network.ssh-proxy.proxyservice'),
+    //         permission: 'sshproxy_service_list',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.ssh_agent')) {
+    //             return true
+    //           }
+    //           return store.getters.isDomainMode || !hasSetupKey(['private', 'vmware', 'public'])
+    //         },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'SshAgentList',
+    //           path: '',
+    //           component: SshAgentList,
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
     /**
      * 负载均衡
      */
@@ -716,39 +716,39 @@ export default {
         },
       ],
     },
-    {
-      meta: {
-        label: i18n.t('dictionary.cdn'),
-      },
-      submenus: [
-        {
-          path: '/cdn',
-          meta: {
-            label: i18n.t('dictionary.cdn_domain'),
-            permission: 'cdn_domains_list',
-            t: 'dictionary.cdn_domain',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.cdn')) {
-                return true
-              }
-              return !hasSetupKey(['aliyun', 'qcloud'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'CdnList',
-              path: '',
-              component: CdnList,
-            },
-            {
-              name: 'CdnCreate',
-              path: 'create',
-              component: CdnCreate,
-            },
-          ],
-        },
-      ],
-    },
+    // {
+    //   meta: {
+    //     label: i18n.t('dictionary.cdn'),
+    //   },
+    //   submenus: [
+    //     {
+    //       path: '/cdn',
+    //       meta: {
+    //         label: i18n.t('dictionary.cdn_domain'),
+    //         permission: 'cdn_domains_list',
+    //         t: 'dictionary.cdn_domain',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.cdn')) {
+    //             return true
+    //           }
+    //           return !hasSetupKey(['aliyun', 'qcloud'])
+    //         },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'CdnList',
+    //           path: '',
+    //           component: CdnList,
+    //         },
+    //         {
+    //           name: 'CdnCreate',
+    //           path: 'create',
+    //           component: CdnCreate,
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
   ],
 }

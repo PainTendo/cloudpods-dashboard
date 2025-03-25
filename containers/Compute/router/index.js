@@ -11,9 +11,9 @@ import { isScopedPolicyMenuHidden } from '@/utils/scopedPolicy'
 
 const ScalingGroup = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/scaling-group')
 const ScalingGroupCreate = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/scaling-group/create')
-const Schedtag = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Cloudenv/views/schedtag')
-const Schedpolicy = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Cloudenv/views/schedpolicy')
-const Dynamicschedtag = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Cloudenv/views/dynamicschedtag')
+// const Schedtag = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Cloudenv/views/schedtag')
+// const Schedpolicy = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Cloudenv/views/schedpolicy')
+// const Dynamicschedtag = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Cloudenv/views/dynamicschedtag')
 const TapService = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/tap-service')
 const TapServiceCreate = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/tap-service/create')
 const HostImage = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/host-image')
@@ -24,25 +24,25 @@ const NetworkCreate = () => import(/* webpackChunkName: "compute" */ /* webpackP
 const EditAttributes = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Network/views/network/EditAttributes')
 const Eip = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Network/views/eip')
 const EipCreate = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Network/views/eip/create')
-const Host = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/host')
-const Physicalmachine = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/physicalmachine')
-const PhysicalmachineAdd = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/physicalmachine/add')
+// const Host = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/host')
+// const Physicalmachine = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/physicalmachine')
+// const PhysicalmachineAdd = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/physicalmachine/add')
 const ServerRecovery = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/server-recovery')
 const DiskRecovery = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/disk-recovery')
 const ImageRecovery = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/image-recovery')
 const InstanceGroup = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/instance-group')
-const SKU = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/sku')
-const Keypair = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/keypair')
+// const SKU = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/sku')
+// const Keypair = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/keypair')
 const Disk = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/disk')
 const DiskBackup = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/disk-backup')
-const GPU = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/gpu')
+// const GPU = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/gpu')
 const Secgroup = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/secgroup')
 const SecgroupCreate = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/secgroup/Create')
 const Servertemplate = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/servertemplate')
 const ServertemplateCreateServer = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/servertemplate/CreateServer')
-const DiskSnapshot = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/snapshot')
-const InstanceSnapshot = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/snapshot-instance')
-const SnapshotPolicy = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/snapshotpolicy')
+// const DiskSnapshot = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/snapshot')
+// const InstanceSnapshot = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/snapshot-instance')
+// const SnapshotPolicy = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/snapshotpolicy')
 const ImageImport = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/image/image-import/index')
 const ImageImportCe = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/image/image-import-ce/index')
 const InstanceBackup = () => import(/* webpackChunkName: "compute" */ /* webpackPrefetch: true */ '@Compute/views/instance-backup')
@@ -298,72 +298,75 @@ export default {
             },
           ],
         },
-        {
-          path: '/disk-snapshot',
-          meta: {
-            label: i18n.t('compute.text_101'),
-            t: 'compute.text_101',
-            permission: 'snapshots_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.disk_snapshot')) {
-                return true
-              }
-              return !hasSetupKey(['onestack', 'private', 'public'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'DiskSnapshot',
-              path: '',
-              component: DiskSnapshot,
-            },
-          ],
-        },
-        {
-          path: '/instance-snapshot',
-          meta: {
-            label: i18n.t('compute.text_102'),
-            t: 'compute.text_102',
-            permission: 'instance_snapshots_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.instance_snapshot')) {
-                return true
-              }
-              return !hasSetupKey(['onestack', 'vmware'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'InstanceSnapshot',
-              path: '',
-              component: InstanceSnapshot,
-            },
-          ],
-        },
-        {
-          path: '/snapshotpolicy',
-          meta: {
-            label: i18n.t('compute.text_103'),
-            t: 'compute.text_103',
-            permission: 'snapshotpolicy_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.snapshotpolicy')) {
-                return true
-              }
-              return !hasSetupKey(['onestack', 'aliyun', 'qcloud'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'SnapshotPolicy',
-              path: '',
-              component: SnapshotPolicy,
-            },
-          ],
-        },
+        // 硬盘快照
+        // {
+        //   path: '/disk-snapshot',
+        //   meta: {
+        //     label: i18n.t('compute.text_101'),
+        //     t: 'compute.text_101',
+        //     permission: 'snapshots_list',
+        //     hidden: () => {
+        //       if (isScopedPolicyMenuHidden('sub_hidden_menus.disk_snapshot')) {
+        //         return true
+        //       }
+        //       return !hasSetupKey(['onestack', 'private', 'public'])
+        //     },
+        //   },
+        //   component: Layout,
+        //   children: [
+        //     {
+        //       name: 'DiskSnapshot',
+        //       path: '',
+        //       component: DiskSnapshot,
+        //     },
+        //   ],
+        // },
+        // 主机快照
+        // {
+        //   path: '/instance-snapshot',
+        //   meta: {
+        //     label: i18n.t('compute.text_102'),
+        //     t: 'compute.text_102',
+        //     permission: 'instance_snapshots_list',
+        //     hidden: () => {
+        //       if (isScopedPolicyMenuHidden('sub_hidden_menus.instance_snapshot')) {
+        //         return true
+        //       }
+        //       return !hasSetupKey(['onestack', 'vmware'])
+        //     },
+        //   },
+        //   component: Layout,
+        //   children: [
+        //     {
+        //       name: 'InstanceSnapshot',
+        //       path: '',
+        //       component: InstanceSnapshot,
+        //     },
+        //   ],
+        // },
+        // 自动快照策略
+        // {
+        //   path: '/snapshotpolicy',
+        //   meta: {
+        //     label: i18n.t('compute.text_103'),
+        //     t: 'compute.text_103',
+        //     permission: 'snapshotpolicy_list',
+        //     hidden: () => {
+        //       if (isScopedPolicyMenuHidden('sub_hidden_menus.snapshotpolicy')) {
+        //         return true
+        //       }
+        //       return !hasSetupKey(['onestack', 'aliyun', 'qcloud'])
+        //     },
+        //   },
+        //   component: Layout,
+        //   children: [
+        //     {
+        //       name: 'SnapshotPolicy',
+        //       path: '',
+        //       component: SnapshotPolicy,
+        //     },
+        //   ],
+        // },
       ],
     },
     {
@@ -532,165 +535,168 @@ export default {
         },
       ],
     },
-    {
-      meta: {
-        label: i18n.t('compute.text_108'),
-      },
-      submenus: [
-        {
-          path: '/keypair',
-          meta: {
-            label: i18n.t('compute.text_108'),
-            permission: 'keypairs_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.keypair')) {
-                return true
-              }
-              return !hasSetupKey(['onestack', 'public', 'private', 'baremetal', 'vmware'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'Keypair',
-              path: '',
-              meta: {},
-              component: Keypair,
-            },
-          ],
-        },
-      ],
-    },
-    {
-      meta: {
-        label: i18n.t('compute.text_109'),
-      },
-      submenus: [
-        {
-          path: '/sku',
-          meta: {
-            label: i18n.t('compute.text_109'),
-            permission: 'serverskus_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.sku')) {
-                return true
-              }
-              return !hasSetupKey(['onestack', 'private', 'vmware', 'public'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'Sku',
-              path: '',
-              meta: {},
-              component: SKU,
-            },
-          ],
-        },
-      ],
-    },
-    {
-      meta: {
-        label: i18n.t('compute.text_110'),
-      },
-      submenus: [
-        {
-          path: '/host',
-          meta: {
-            label: i18n.t('compute.text_111'),
-            permission: 'hosts_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.host')) {
-                return true
-              }
-              return !hasSetupKey(['onestack', 'openstack', 'dstack', 'zstack', 'vmware'])
-            },
-            // hidden: () => {
-            //   const hasBMAgent = hasServices('bmagent')
-            //   const hasHostAgent = hasServices('hostagent')
-            //   if (!hasBMAgent && !hasHostAgent) {
-            //     return true
-            //   }
-            //   return false
-            // },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'Host',
-              path: '',
-              component: Host,
-            },
-          ],
-        },
-        {
-          path: '/physicalmachine',
-          meta: {
-            label: i18n.t('compute.text_112'),
-            permission: 'hosts_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.physicalmachine')) {
-                return true
-              }
-              return !hasSetupKey(['baremetal'])
-            },
-            // hidden: () => {
-            //   const hasBMAgent = hasServices('bmagent')
-            //   if (!hasBMAgent) {
-            //     return true
-            //   }
-            //   return false
-            // },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'Physicalmachine',
-              path: '',
-              component: Physicalmachine,
-            },
-            {
-              name: 'PhysicalmachineAdd',
-              path: 'add',
-              component: PhysicalmachineAdd,
-            },
-          ],
-        },
-        {
-          path: '/gpu',
-          meta: {
-            label: i18n.t('compute.text_113'),
-            permission: 'isolated_devices_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.gpu')) {
-                return true
-              }
-              if (!(store.getters.isAdminMode || store.getters.isDomainMode)) {
-                return true
-              }
-              return !hasSetupKey(['onestack'])
-            },
-            // hidden: () => {
-            //   const hasBMAgent = hasServices('bmagent')
-            //   const hasHostAgent = hasServices('hostagent')
-            //   if (!hasBMAgent && !hasHostAgent) {
-            //     return true
-            //   }
-            //   return false
-            // },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'GPU',
-              path: '',
-              component: GPU,
-            },
-          ],
-        },
-      ],
-    },
+    // 密钥
+    // {
+    //   meta: {
+    //     label: i18n.t('compute.text_108'),
+    //   },
+    //   submenus: [
+    //     {
+    //       path: '/keypair',
+    //       meta: {
+    //         label: i18n.t('compute.text_108'),
+    //         permission: 'keypairs_list',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.keypair')) {
+    //             return true
+    //           }
+    //           return !hasSetupKey(['onestack', 'public', 'private', 'baremetal', 'vmware'])
+    //         },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'Keypair',
+    //           path: '',
+    //           meta: {},
+    //           component: Keypair,
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
+    // 套餐
+    // {
+    //   meta: {
+    //     label: i18n.t('compute.text_109'),
+    //   },
+    //   submenus: [
+    //     {
+    //       path: '/sku',
+    //       meta: {
+    //         label: i18n.t('compute.text_109'),
+    //         permission: 'serverskus_list',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.sku')) {
+    //             return true
+    //           }
+    //           return !hasSetupKey(['onestack', 'private', 'vmware', 'public'])
+    //         },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'Sku',
+    //           path: '',
+    //           meta: {},
+    //           component: SKU,
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
+    // 基础资源
+    // {
+    //   meta: {
+    //     label: i18n.t('compute.text_110'),
+    //   },
+    //   submenus: [
+    //     {
+    //       path: '/host',
+    //       meta: {
+    //         label: i18n.t('compute.text_111'),
+    //         permission: 'hosts_list',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.host')) {
+    //             return true
+    //           }
+    //           return !hasSetupKey(['onestack', 'openstack', 'dstack', 'zstack', 'vmware'])
+    //         },
+    //         // hidden: () => {
+    //         //   const hasBMAgent = hasServices('bmagent')
+    //         //   const hasHostAgent = hasServices('hostagent')
+    //         //   if (!hasBMAgent && !hasHostAgent) {
+    //         //     return true
+    //         //   }
+    //         //   return false
+    //         // },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'Host',
+    //           path: '',
+    //           component: Host,
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       path: '/physicalmachine',
+    //       meta: {
+    //         label: i18n.t('compute.text_112'),
+    //         permission: 'hosts_list',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.physicalmachine')) {
+    //             return true
+    //           }
+    //           return !hasSetupKey(['baremetal'])
+    //         },
+    //         // hidden: () => {
+    //         //   const hasBMAgent = hasServices('bmagent')
+    //         //   if (!hasBMAgent) {
+    //         //     return true
+    //         //   }
+    //         //   return false
+    //         // },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'Physicalmachine',
+    //           path: '',
+    //           component: Physicalmachine,
+    //         },
+    //         {
+    //           name: 'PhysicalmachineAdd',
+    //           path: 'add',
+    //           component: PhysicalmachineAdd,
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       path: '/gpu',
+    //       meta: {
+    //         label: i18n.t('compute.text_113'),
+    //         permission: 'isolated_devices_list',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.gpu')) {
+    //             return true
+    //           }
+    //           if (!(store.getters.isAdminMode || store.getters.isDomainMode)) {
+    //             return true
+    //           }
+    //           return !hasSetupKey(['onestack'])
+    //         },
+    //         // hidden: () => {
+    //         //   const hasBMAgent = hasServices('bmagent')
+    //         //   const hasHostAgent = hasServices('hostagent')
+    //         //   if (!hasBMAgent && !hasHostAgent) {
+    //         //     return true
+    //         //   }
+    //         //   return false
+    //         // },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'GPU',
+    //           path: '',
+    //           component: GPU,
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
     // {
     //   meta: {
     //     label: '运维工具',
@@ -733,77 +739,78 @@ export default {
     //     },
     //   ],
     // },
-    {
-      meta: {
-        label: i18n.t('cloudenv.text_17'),
-      },
-      submenus: [
-        {
-          path: '/schedtag',
-          meta: {
-            label: i18n.t('dictionary.schedtag'),
-            permission: 'schedtags_list',
-            t: 'dictionary.schedtag',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.schedtag')) {
-                return true
-              }
-              return !hasSetupKey(['onestack', 'openstack', 'dstack', 'zstack', 'vmware', 'public', 'private', 'baremetal'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'Schedtag',
-              path: '',
-              component: Schedtag,
-            },
-          ],
-        },
-        {
-          path: '/schedpolicy',
-          meta: {
-            label: i18n.t('cloudenv.text_19'),
-            permission: 'schedpolicies_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.schedpolicy')) {
-                return true
-              }
-              return !hasSetupKey(['onestack', 'openstack', 'dstack', 'zstack', 'vmware', 'public', 'private', 'baremetal'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'Schedpolicy',
-              path: '',
-              component: Schedpolicy,
-            },
-          ],
-        },
-        {
-          path: '/dynamicschedtag',
-          meta: {
-            label: i18n.t('cloudenv.text_20'),
-            permission: 'dynamicschedtags_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.dynamicschedtag')) {
-                return true
-              }
-              return !hasSetupKey(['onestack', 'openstack', 'dstack', 'zstack', 'vmware', 'public', 'private', 'baremetal'])
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'Dynamicschedtag',
-              path: '',
-              component: Dynamicschedtag,
-            },
-          ],
-        },
-      ],
-    },
+    // 调度
+    // {
+    //   meta: {
+    //     label: i18n.t('cloudenv.text_17'),
+    //   },
+    //   submenus: [
+    //     {
+    //       path: '/schedtag',
+    //       meta: {
+    //         label: i18n.t('dictionary.schedtag'),
+    //         permission: 'schedtags_list',
+    //         t: 'dictionary.schedtag',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.schedtag')) {
+    //             return true
+    //           }
+    //           return !hasSetupKey(['onestack', 'openstack', 'dstack', 'zstack', 'vmware', 'public', 'private', 'baremetal'])
+    //         },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'Schedtag',
+    //           path: '',
+    //           component: Schedtag,
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       path: '/schedpolicy',
+    //       meta: {
+    //         label: i18n.t('cloudenv.text_19'),
+    //         permission: 'schedpolicies_list',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.schedpolicy')) {
+    //             return true
+    //           }
+    //           return !hasSetupKey(['onestack', 'openstack', 'dstack', 'zstack', 'vmware', 'public', 'private', 'baremetal'])
+    //         },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'Schedpolicy',
+    //           path: '',
+    //           component: Schedpolicy,
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       path: '/dynamicschedtag',
+    //       meta: {
+    //         label: i18n.t('cloudenv.text_20'),
+    //         permission: 'dynamicschedtags_list',
+    //         hidden: () => {
+    //           if (isScopedPolicyMenuHidden('sub_hidden_menus.dynamicschedtag')) {
+    //             return true
+    //           }
+    //           return !hasSetupKey(['onestack', 'openstack', 'dstack', 'zstack', 'vmware', 'public', 'private', 'baremetal'])
+    //         },
+    //       },
+    //       component: Layout,
+    //       children: [
+    //         {
+    //           name: 'Dynamicschedtag',
+    //           path: '',
+    //           component: Dynamicschedtag,
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
     {
       meta: {
         label: i18n.t('compute.text_114'),

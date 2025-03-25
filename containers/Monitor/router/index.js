@@ -69,36 +69,36 @@ export default {
             },
           ],
         },
-        {
-          path: '/monitorresources-host',
-          meta: {
-            label: i18n.t('dictionary.host'),
-            permission: 'monitorresources_list',
-            hidden: () => {
-              if (isScopedPolicyMenuHidden('sub_hidden_menus.monitorresources_host')) {
-                return true
-              }
+        // {
+        //   path: '/monitorresources-host',
+        //   meta: {
+        //     label: i18n.t('dictionary.host'),
+        //     permission: 'monitorresources_list',
+        //     hidden: () => {
+        //       if (isScopedPolicyMenuHidden('sub_hidden_menus.monitorresources_host')) {
+        //         return true
+        //       }
 
-              if (!(store.getters.isAdminMode || store.getters.isDomainMode)) {
-                return true
-              }
+        //       if (!(store.getters.isAdminMode || store.getters.isDomainMode)) {
+        //         return true
+        //       }
 
-              return process.env.VUE_APP_IS_PRIVATE ? !setupKeys.hasVersionedSetupKey({
-                '3.0': ['monitor'],
-                default: ['onestack', 'openstack', 'dstack', 'zstack', 'public', 'vmware', 'hcso', 'hcs'],
-              }) : false
-            },
-          },
-          component: Layout,
-          children: [
-            {
-              name: 'MonitorresourcesHost',
-              path: '',
-              props: { res_type: 'host' },
-              component: MonitorresourcesIndex,
-            },
-          ],
-        },
+        //       return process.env.VUE_APP_IS_PRIVATE ? !setupKeys.hasVersionedSetupKey({
+        //         '3.0': ['monitor'],
+        //         default: ['onestack', 'openstack', 'dstack', 'zstack', 'public', 'vmware', 'hcso', 'hcs'],
+        //       }) : false
+        //     },
+        //   },
+        //   component: Layout,
+        //   children: [
+        //     {
+        //       name: 'MonitorresourcesHost',
+        //       path: '',
+        //       props: { res_type: 'host' },
+        //       component: MonitorresourcesIndex,
+        //     },
+        //   ],
+        // },
       ],
     },
     {

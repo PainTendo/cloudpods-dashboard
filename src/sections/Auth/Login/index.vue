@@ -33,6 +33,7 @@
 <script>
 import * as R from 'ramda'
 import { mapGetters, mapState } from 'vuex'
+import CryptoJS from 'crypto-js'
 import { getLoginDomain } from '@/utils/common/cookie'
 import { getI18nVal, getI18nColorVal } from '@/utils/i18n'
 import { getLoginModeInStorage } from '@/utils/auth'
@@ -89,6 +90,35 @@ export default {
     },
   },
   async created () {
+    // 新增自动登录逻辑
+    const { user, token, timestamp } = this.$route.query
+    console.log('user', user, 'token', token, 'timestamp', timestamp)
+    if (user && token && timestamp) {
+      // 时间戳校验（5分钟内有效）
+      console.log('时间戳校验', Date.now(), parseInt(timestamp))
+      if (Date.now() - parseInt(timestamp) < 300000) {
+        console.log('5分钟内有效')
+        const secret = 'cucmp_salt' // 固定盐值
+        const hash = this.generateToken(user, timestamp, secret)
+        const expectedToken = hash.toString().substring(0, 16)
+        console.log('expectedToken', expectedToken)
+        console.log('token', token)
+
+        if (token === expectedToken) {
+          try {
+            await this.$store.dispatch('auth/login', {
+              username: user,
+              password: 'UWhmNFJmNFNXR0dZbVRicHDwdOwm2sWslxrE2lrxlBuAQPOmyWspm21M/lbWiENL',
+              domain: 'default',
+            })
+            this.$router.replace(this.$route.query.redirect || '/')
+            return
+          } catch (e) {
+            this.$notification.error({ message: '自动登录失败' })
+          }
+        }
+      }
+    }
     // 获取domains、regions、idps、captcha信息
     try {
       // 如果有设置为default的idp，则用default的idp方式登录
@@ -161,6 +191,11 @@ export default {
     this.switchLoginMode()
   },
   methods: {
+    // 新增token生成方法
+    generateToken (user, timestamp, secret) {
+      const data = CryptoJS.MD5(`${user}|${timestamp}|${secret}`)
+      return data
+    },
     gethost (str) {
       if (str.startsWith('http://')) {
         return str.substr(7)
