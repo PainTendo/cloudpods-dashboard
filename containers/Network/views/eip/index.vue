@@ -34,7 +34,7 @@ export default {
   data () {
     return {
       listId: 'EipList',
-      cloudEnvOptions: getCloudEnvOptions('network_manage_brands').filter(item => item.label !== '本地IDC'),
+      cloudEnvOptions: getCloudEnvOptions('network_manage_brands').filter(item => item.key !== 'onpremise'),
       cloudEnv: '',
       resStaticsResource: 'eips',
     }
